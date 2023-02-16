@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <title>Dine Booking using Table</title>
+    </head>
+
+    <body id="wrapper">
+        <h3> Dine Booking</h3>
+        <table class="center">
+        <form action="dineBooking.html" method="post">
+            <tr>
+                <td>
+                    Visitor Name:
+                </td>
+                <td>
+                    <input type="text" id="name" name="name" size="20" autofocus required>
+                </td>
+            </tr>
+           <tr>
+            <td>
+                Number of Members:
+            </td>
+            <td>
+                <input type="number" id="members" name="members" min="1" max="99" required>
+            </td>
+           </tr>
+            <tr>
+                <td>
+                    Contact No.:
+                </td>
+                <td>
+                    <input type="number" id="contact" name="contact" max = "10" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email: 
+                </td>
+                <td>
+                    <input type="email" id="yourEmail" name="yourEmail" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td> Type of Food:</td>
+                <td>
+                    
+                    <input type="checkbox" name ="f" value="South Indian">South Indian
+                    <input type="checkbox" name ="f" value="North Indian">North Indian
+                    <input type="checkbox" name ="f" value="Chinese">Chinese
+                    <input type="checkbox" name ="f" value="Western">Western
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Room Status: 
+                </td>
+                <td>
+                   
+                    <input type="radio" name="rs" value="AC" required>AC
+                    <input type="radio" name="rs" value="Non AC">Non AC
+                
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Venue Preference:
+                </td>
+                <td>
+                    <select required>
+                        <option value="">--SELECT--</option>
+                        <option>Arena</option>
+                        <option>Fiesta</option>
+                        <option>Vista</option>
+                        <option>Mythri</option>
+                        <option>Magna</option>
+                        <option>Oasis</option>
+                        <option>Amoeba</option>
+      </select>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <input type="submit" value="Book">
+                </td>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+            
+            
+        </form>
+    </table>
+    </body>
+</html>
