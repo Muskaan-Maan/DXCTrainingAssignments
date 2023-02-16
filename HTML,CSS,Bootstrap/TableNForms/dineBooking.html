@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
+        <title>Dine Booking</title>
+    </head>
+
+    <body>
+        <h3>Dine booking</h3>
+        <form action="structuredBooking.html" method="post">
+
+            Visitor Name: <input type="text" id="name" name="name" size="20" autofocus required><br><br>
+            Number of Members: <input type="number" id="members" name="members" min="1" max="99" required><br><br>
+            Contact No.: <input type="text" id="contact" name="contact" max = "10" required><br><br>
+            Email: <input type="email" id="yourEmail" name="yourEmail" required><br><br>
+            Type of Food: 
+            <input type="checkbox" name ="f" value="South Indian">South Indian
+            <input type="checkbox" name ="f" value="North Indian">North Indian
+            <input type="checkbox" name ="f" value="Chinese">Chinese
+            <input type="checkbox" name ="f" value="Western">Western
+       
+            <br><br>
+            Room Status: 
+           
+            <input type="radio" name="rs" value="AC" required>AC
+            <input type="radio" name="rs" value="Non AC">Non AC
+        
+            <br><br>
+            Venue Preference: <select required>
+                              <option value="">--SELECT--</option>
+                              <option>Arena</option>
+                              <option>Fiesta</option>
+                              <option>Vista</option>
+                              <option>Mythri</option>
+                              <option>Magna</option>
+                              <option>Oasis</option>
+                              <option>Amoeba</option>
+            </select><br><br>
+
+            <input type="submit" value="Book">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
