@@ -1,0 +1,262 @@
+header, body, nav, main, footer { 
+    display: block; 
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 700px;
+    max-width: 1024px;
+    
+    box-shadow: 3px 3px 3px #333; 
+    
+      background-image: url(background.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+#title{
+    background-color: #000033;
+    color: white;
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 200%;
+    padding: 5px;
+    margin-bottom: 25px;
+    margin-bottom: 0px;
+    
+    
+
+   background: linear-gradient(to left, rgba(255, 255, 255, 0) 0, #000033 240px,  #000033 290px), url(sunnnny.jpg) right no-repeat;
+    
+}
+
+
+nav{
+    
+    padding: 5px;
+    
+    float: left;
+    width: 170px;
+    
+    box-shadow: 3px #333;
+
+}
+
+
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+nav li{
+
+    list-style-type: none;
+}
+
+nav a:link {
+    color: #3262a3;
+  }
+  nav a:hover {
+    color: #cccccc;
+  }
+  nav  a:visited {
+    color: #102141;
+  }
+
+.innimg {
+
+    background-image:url(rivercove.jpg);
+    width: 854px;
+    height: 300px;
+    float: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    box-shadow: 3px #333;
+}
+
+.actimg {
+
+    background-image:url(rafting.jpg);
+    width: 854px;
+    height: 300px;
+    float: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    box-shadow: 3px #333;
+}
+
+.corpimg{
+    
+    background-image:url(corporate.png);
+    width: 854px;
+    height: 300px;
+    float: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    box-shadow: 3px #333;
+}
+
+#content{
+    padding: 20px;
+    background-color: #ffffff;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+    text-align: justify;
+
+}
+
+h2{
+    color: #3399CC;
+    
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0px;
+    padding: 5px;
+    
+}
+
+
+dt{
+    color: #000033;
+    font-weight: bold;
+}
+
+.inn{
+    
+    color: #000033;
+    font-size:  1.2em;
+    
+}
+
+footer{
+    
+    font-size: 0.70em;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+main{
+    background-color: white;
+    margin-left: 170px;
+    line-height: 1.5em;
+    
+}
+
+
+@media(max-width: 1024px) {
+    body{
+    margin: 0px;
+    padding: 0px;
+    }
+
+    #wrapper{
+        width: auto;
+        min-width: 0px;
+        margin: 0px;
+        box-shadow: none;
+        
+    }
+    h1{
+        margin: 0px;
+    }
+    nav{
+        float: none;
+        width: auto;
+        height: 15px;
+        padding: 0;
+        display: inline-block;
+    }
+
+    nav li{
+        display: inline-block;
+    }
+    nav a{
+        padding: 1em;
+        
+    }
+
+    main{
+        padding: 1em;
+        margin-left: 0px;
+        font-size: 90%;
+    }
+
+    div.innimg{
+        margin-left: 0px;
+    }
+
+    div.actimg{
+        margin-left: 0px;
+    }
+    div.corpimg{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    h1{
+        height: 100%;
+        font-size: 1.5em;
+        padding-left: 0.3em;
+    }
+    nav{
+        float: none;
+        width: auto;
+        padding: 0px;
+        height: auto;
+    }
+
+    nav ul{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    nav li{
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+    nav a{
+        padding: 1em;
+        display: block;
+        padding: 0.2em;
+        font-size: 1.3em;
+        border-bottom: 1px;
+        border-color: #330000;
+    }
+
+    main{
+        padding-top: 0.1em;
+        padding-left: 0.4em;
+        padding-bottom: 0.1em;
+        padding-right: 0.6em;
+    }
+
+    .innimg{
+        display: none;
+    }
+
+    .actimg{
+        display: none;
+    }
+    .corpimg{
+        display: none;
+    }
+    footer{
+        padding: 0px;
+    }
+}
