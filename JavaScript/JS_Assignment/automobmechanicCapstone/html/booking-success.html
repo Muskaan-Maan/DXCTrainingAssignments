@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/bookingsuccess.css">
+  <link rel="stylesheet" href="../css/modal.css"> 
+   <script src="../js/main.js"></script>
+  <script src="../js/booking.js"></script>
+  <title>Booking Success | AutoMob-Mechanic</title>
+</head>
+
+<body>
+  <header>
+    <b><a href="./home.html">AutoMob-Mechanic</a></b>
+    <nav>
+      <span id="name"></span>
+      <a href="./home.html">Home</a> |
+      <a href="./services.html">Services</a> |
+      <a href="./booking.html">Booking</a> |
+      <a href="./home.html" id="logout">Logout | </a>
+      <a href="mailto:contact@automob.co.in">contact@automob.co.in &#9993;</a> |
+      <a>999-999-9999 &#9743;</a>
+    </nav>
+  </header>
+  <main>
+    <div id="booking-confirmation">
+      <img src="../images/shutterstock_1218932152.jpg" width="500" height="250">
+      <h2>Thanks for booking our service <span>&#128077;</span></h2>
+      <p>We will get back to you soon with the details via email/phone.</p>
+      <button id="feedback-button"onclick="setupFeedbackPopup() ">Rate your experience</button>
+    </div>
+    <div id="rating-popup" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Please rate your experience:</h2>
+        <form>
+          <label for="rating">Rating:</label>
+          <select id="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <br><br>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <span>&copy; 2023 AutoMob-Mechanic. All Rights Reserved.</span>
+  </footer>
+
+</body>
+
+</html>

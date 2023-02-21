@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Employee Details
+        </title>
+    </head>
+
+    <body>
+        <script>
+
+           
+
+             class Person{
+
+                constructor(name, age){
+                    this.name = name;
+                    this.age = age;
+                }
+             }
+
+             class Employee extends Person{
+                constructor(name, age, role, contact){
+                    super(name, age);
+                    this.role = role;
+                    this.contact = contact;
+                }
+
+                display(){
+                    return "Name: " + this.name + "<br>Age: " + this.age + "<br>Role: " + this.role + "<br>Contact: " + this.contact;
+                }
+             }
+
+             const call = new Employee("Jack", "34", "Engineer", "74924774342");
+
+             document.writeln("The details of the Employee are: <br><br>");
+
+             document.writeln(call.display());
+
+             
+
+        </script>
+    </body>
+</html>

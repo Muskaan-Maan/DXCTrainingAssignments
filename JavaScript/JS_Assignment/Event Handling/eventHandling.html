@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Booking Summary</title>
+    <style>
+        div#maincontent {
+            height: 250px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="heading">
+            <h2>Booking Summary</h2>
+        </div>
+        <div id="maincontent">
+            <script>
+
+
+
+                var costperticket = 9;
+
+
+                document.writeln("Cost per ticket: $" + costperticket + "<br><br>");
+
+
+                calculateCost("3");
+
+
+
+                function calculateCost(seat) {
+
+                    var discount = 5;
+                    var total = 0;
+
+                    if (seat <= 2) {
+
+                        total += seat * costperticket;
+
+                        document.writeln("Ticket cost is : $" + total + "<br>");
+
+                    } else if (seat >= 5) {
+
+                        document.writeln("Booking is not allowed <br>")
+
+                    }
+
+                    else if (seat > 2 && seat < 5) {
+
+
+                        for (var customer = 1; customer <= seat; customer++) {
+
+                            var discost = costperticket - (costperticket * (discount / 100));
+
+                            discount += 2;
+
+                            total += discost;
+                        }
+
+                        document.writeln("Total Cost: $" + total + "<br>");
+                    }
+
+                    document.writeln("Congratulation!! " + seat + " seats are eligible for discount.");
+
+
+                }
+
+                function calculateDiscount(seat) {
+
+                    var discount = 5;
+
+
+                    for (var customer = 1; customer <= seat; customer++) {
+
+                        var discost = costperticket - (costperticket * (discount / 100));
+
+                        document.writeln(discount + "% discount! on Ticket " + customer + "<br>");
+
+                        discount += 2;
+
+                    }
+
+
+                }
+
+
+
+            </script>
+
+
+            <button onclick="calculateDiscount(3)">Apply</button>
+        </div>
+    </center>
+</body>
+
+</html>
